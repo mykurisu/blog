@@ -8,8 +8,9 @@ subtitle: 前端搬砖部包工头
 description:  有关前端开发的一切
 keywords:
 author: mykurisu
-language:
+language: zh-cn
 timezone:
+avatar: http://akikan.qiniudn.com/WechatIMG16.jpeg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -86,3 +87,6 @@ archive_generator:
   yearly: false
   monthly: false
   daily: false
+
+# Social Accounts
+github: mykurisu
