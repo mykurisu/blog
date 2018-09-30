@@ -1,5 +1,10 @@
 ---
 title: 使用Webhook实现前端自动发布
+categories:
+-   博客正篇
+tags:
+-   Javascript
+-   Gitlab
 ---
 
 > 喜闻乐见的背景故事时间--承接[[prerender-spa-plugin]--微型Vue项目的静态化利器](https://juejin.im/post/5ab31b8cf265da239706c2df)，官网上线之后，就开始琢磨，每次改动都得上服务器部署一下，是不是有点麻烦了，是时候该整个自动化部署惹:)然后就开始自己挖坑自己填啦。

@@ -1,5 +1,9 @@
 ---
 title: 怎样优雅安全的Get到Object里的东西呢？
+categories:
+-   Lab小技巧
+tags:
+-   Javascript
 ---
 
 > 写在前面--这是一篇短文，是平时逛各类奇怪网站看到的一个选题，感觉挺有趣的，就自己写了个方法。

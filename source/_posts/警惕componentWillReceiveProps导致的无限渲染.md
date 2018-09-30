@@ -1,5 +1,10 @@
 ---
 title: 谈谈React--componentWillReceiveProps的使用
+categories:
+-   博客正篇
+tags:
+-   Javascript
+-   React
 ---
 
 ## 什么是componentWillReceiveProps？
