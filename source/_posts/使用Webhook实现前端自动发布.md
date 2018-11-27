@@ -5,6 +5,7 @@ categories:
 tags:
 -   Javascript
 -   Gitlab
+date: 2018/3/27
 ---
 
 > 喜闻乐见的背景故事时间--承接[[prerender-spa-plugin]--微型Vue项目的静态化利器](https://juejin.im/post/5ab31b8cf265da239706c2df)，官网上线之后，就开始琢磨，每次改动都得上服务器部署一下，是不是有点麻烦了，是时候该整个自动化部署惹:)然后就开始自己挖坑自己填啦。
@@ -32,7 +33,7 @@ Webhook顾名思义，其实就是一钩子。当我们在Gitlab上做出某些�
 
 ## 该怎么利用Webhook解放我们的双手？
 
-<img src="https://user-gold-cdn.xitu.io/2018/3/25/1625dc023af783b9?w=1366&h=1106&f=png&s=196389" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/webhook-1.png" />
 
 上图是Gitlab中有关webhook的配置页面，当我们成功进行了[Trigger]内部的某些或某些操作时，比如**Push events**--成功push了一次代码，无论是向哪个分支push，都可以触发hook......
 
@@ -97,4 +98,4 @@ app.listen(1234, '0.0.0.0', function () {
 
 本切图仔第一次踩这方面的坑，希望对萌新们有所帮助，也希望大大们轻拍。接下来，可能会有一个基于python的**自动部署完成后微信通知**脚本，敬请期待，当然也可能没有:)毕竟只是个切图仔，搬完砖就该睡了> <
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

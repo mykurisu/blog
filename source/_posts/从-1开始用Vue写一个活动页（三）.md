@@ -7,6 +7,7 @@ tags:
 -   Vue
 -   CSS
 -   微信相关
+date: 2018/1/30
 ---
 
 > 历经1周半开发周期，我基于vue的微信活动页也算勉强上线了，经历了不少坑也填了不少坑，总体来说还是受益匪浅的。
@@ -52,7 +53,7 @@ tags:
 ### ④项目目录
 最后给大家看看这次项目的目录结构，虽然估计还是挺多坑的，但还是希望能有所帮助。
 
-<img src="./vue-spa.png" width="50%">
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/vue-spa.png" width="50%">
 
 这次不仅是js我建立了Utils，在scss上我也尝试设立一个类似的"公用库"里面存放一些关于px2rem的方法以及一些常用的mixin。
 
@@ -65,4 +66,4 @@ tags:
 
 等到同事们配完需要展示的内容，希望能在这里展示给大家看看吧，谢谢阅读~
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

@@ -5,6 +5,7 @@ categories:
 tags:
 -   Git
 -   Gitlab
+date: 2018/4/17
 ---
 
 >   又是喜闻乐见的背景时间--最近也开始接触面试了，发现很多童鞋对git十分陌生，甚至听到git有点恐慌，不过这样无可厚非，毕竟如果是自己单干的话确实可能接触不到协作层面的情境。<del>对的，比如说我</del>
@@ -125,7 +126,7 @@ git push //...ok
 
 将本地改动推送到远端代码库后，我们需要进入gitlab相应的项目，创建PR(图中Merge Request选项，也就是Github中的Pull Request)
 
-<img src="https://user-gold-cdn.xitu.io/2018/4/17/162d22baf60fb89a?w=440&h=658&f=jpeg&s=35181" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/git-1.jpeg" width="50%" />
 
 确认相关改动无误后我们可以创建PR等待管理员review，创建好之后又有改动怎么办？没关系的，我们只需要按照老方法将代码推送到服务器，PR内容会自动更新至最新。
 
@@ -171,4 +172,4 @@ git push
 
 其实这就是我个人开发时候的备忘录，一些基本开发流程还是有的，如果有特殊的需求的话，可以上网找找Git相关的教程~在此不会过多的涉猎。
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

@@ -4,13 +4,14 @@ categories:
 -   Lab小技巧
 tags:
 -   Javascript
+date: 2018/9/23
 ---
 
 >   开篇介绍--因为最近无暇整理编写内容比较丰富的博文，所以想着是不是可以把平时见到或者用到的一些开发小技巧分享给大家。文章大概构成是场景+代码+解释，希望对大家有所帮助~
 
 不知道大家平时有没遇到过要判断版本号的需求，假设有这样一个场景，我们需要在H5或者小程序中判断微信客户端的版本号，不同版本的微信显示不一样的UI或者执行不同的逻辑。
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--001.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159513;1543160413&q-key-time=1543159513;1543160413&q-header-list=&q-url-param-list=&q-signature=5bb70d11b6b72665ca2a14467d3280a3d86dc782" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--001.png" />
 
 **targetVersion**是我们能够取到的当前的版本号，**baseVersion**是我们的“标尺”版本。 在函数的开头，当然是要校验一下入参，避免因传参问题导致程序崩溃的尴尬状况。
 
@@ -20,4 +21,4 @@ tags:
 
 故将i设为0，进入while循环中，我们首要比较的就是tList[0]与bList[0]这两个数字的大小，如果在此tList的数字要更大，我们则完全可以不用继续比较下面的数字，可以直接得出targetVersion版本较高的结论。反之，如果tList的数值小于bList则可以得出相反的结论，倘若两个数字相等，则进入下一位的比较，直到全部比较完成。最终return出我们的比较结果，供外部使用。
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159886;1543160786&q-key-time=1543159886;1543160786&q-header-list=&q-url-param-list=&q-signature=50e602fedfd1f96f14a753cd09aad472ea5b915d" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

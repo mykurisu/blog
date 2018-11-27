@@ -7,6 +7,7 @@ tags:
 -   Vue
 -   CSS
 -   微信相关
+date: 2018/1/12
 ---
 
 > 写在前面--为啥从-1，因为看到大大们都是从0开始起手的，身为切图仔就只能从-1开始起手啦。不扯啦..让我们进入正题。
@@ -144,9 +145,5 @@ $ npm run dev
 ## 舞台搭建完毕
 至此，已经基本完成了vue项目的脚手架，我们可以很惬意的往项目里面填肉了。下一篇，将会结合具体开发的页面，记录一下途中遇到的问题和填过的坑。
 
-## 往期文章
--   [移动端自制音乐播放器--React](https://juejin.im/post/5a4e3af86fb9a01cba425d7d)
--   [移动端中踩过的关于日历&时间的坑](https://juejin.im/post/5a3f729c6fb9a044fb07f935)
--   [谈谈React--componentWillReceiveProps的使用](https://juejin.im/post/5a39de3d6fb9a045154405ec)
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

@@ -4,6 +4,7 @@ categories:
 -   博客正篇
 tags:
 -   Javascript
+date: 2018/7/18
 ---
 
 > 写在前面，这应该是JS中很基础的一部分吧，但是身为苦苦自学前端的切图仔，对其了解还是不够深刻，有必要写写~
@@ -18,7 +19,7 @@ tags:
 ## 一个场景
 相信下面这个弹窗大家都见过或者做过吧↓
 
-<img src="dialog-1.jpeg" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/dialog-1.jpeg" width="50%" />
 
 我们假设弹窗底部没有可点击的按钮，我们需要点击弹窗外部的半透明层才可将弹窗隐藏，不知道大家在写这个需求的时候有没遇到过这样一种情况：
 
@@ -63,7 +64,7 @@ document.querySelector('#kurisu').addEventListener('click', () => {
 
 借用一张W3C的图片可以很形象的了解这两种模式--
 
-<img src="eventflow.svg" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/eventflow.svg" width="50%" />
 
 ## JavaScript事件委托是个啥
 因为事件冒泡和事件监听器的存在，使得我们可以使用事件委托。什么是事件委托？我想用一个例子说明会比较好，我们有一个ul，里面有数十个li，每一项li都有一个点击事件，这时候该怎么办？
@@ -91,4 +92,4 @@ function kurisu() {
 
 两个地方的代码是一样的，如何选择取决于大家怎么看比较方便~
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

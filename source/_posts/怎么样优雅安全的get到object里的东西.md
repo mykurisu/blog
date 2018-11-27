@@ -4,6 +4,7 @@ categories:
 -   Lab小技巧
 tags:
 -   Javascript
+date: 2018/2/6
 ---
 
 > 写在前面--这是一篇短文，是平时逛各类奇怪网站看到的一个选题，感觉挺有趣的，就自己写了个方法。
@@ -22,7 +23,7 @@ console.log(someObject.a.b.c.d.e)
 ## 应该如何安全的获取其中的元素呢？
 我们定义一个safeGet函数，里面会传入我们的object以及获取元素的路径。
 
-<img src="safeget.png" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/safeget.png" width="50%" />
 
 本函数的核心是try catch的使用，根据传入的path，我们将其split成一个路径数组。
 

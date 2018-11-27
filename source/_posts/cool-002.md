@@ -4,6 +4,7 @@ categories:
 -   Lab小技巧
 tags:
 -   Javascript
+date: 2018/9/24
 ---
 
 **标题和内容可能无关(微笑**
@@ -12,7 +13,7 @@ tags:
 
 最近在开发产品配置的后台，经常要对表单数据进行合并，所以经常用到我们的主角**Object.assign**，用起来也十分方便，直到有一次遇到这个问题--
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-1.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159912;1543160812&q-key-time=1543159912;1543160812&q-header-list=&q-url-param-list=&q-signature=7bf25e6d1ae53f5dde5e9fd1b74ba89f65be7210" width="50%"/>
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-1.png" width="50%"/>
 
 两个对象合并之后，结果却不符合预期，assign方法的后参数对象覆盖了前参数对象，按照对这个方法的直观理解，是应该输出图中的第一个结果才对。
 
@@ -22,15 +23,15 @@ tags:
 
 这样就能解释上面那个不符预期的结果了，Object.assign()拷贝的是属性值，如果属性值是对象，它只会拷贝引用值，也就造成了“覆盖”的假象了。既然知道了原因，我们是否可以搞一个assign的升级版，让它把引用值的属性也进行拷贝，刚好看到MDN里面有关于它的polyfill，代码如下--
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-1.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159912;1543160812&q-key-time=1543159912;1543160812&q-header-list=&q-url-param-list=&q-signature=7bf25e6d1ae53f5dde5e9fd1b74ba89f65be7210" width="50%"/>
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-2.png" width="50%"/>
 
 不难发现，assign的核心就是枚举对象的键值进行比对，然后得出拷贝的结果，那么我们的改造重心应该也是循环的这块内容。几经折腾，写了个assignPro方法--
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-3.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159931;1543160831&q-key-time=1543159931;1543160831&q-header-list=&q-url-param-list=&q-signature=3f7430677686367ee066374600a9d5c305d10cec" width="50%"/>
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-3.png" width="50%"/>
 
 在新的方法中，将之前循环赋值的地方换成了一个新的方法**handleR**，在里面将会对传入的对象进行递归解构赋值，检测到传入的键值是非数组对象，则将其作为参数再传入handleR方法中，直到遍历完所有的对象。
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-4.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159939;1543160839&q-key-time=1543159939;1543160839&q-header-list=&q-url-param-list=&q-signature=9c34f202e1b89a92f85f66c0e71edc7ea86e8bcb" width="50%"/>
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--002-4.png" width="50%"/>
 
 最终使用assignPro可以使拷贝结果达到预期~**请注意，这个玩意并没有在生产中运用，大家抱着看看的心态就好了**，当然如果能够继续完善，比如对数组的处理...最后应该还是可以投入生产使用的。
 
@@ -38,4 +39,4 @@ tags:
 
 这次的小技巧到这就结束啦，大家遇到assign结果不符合预期的时候也不用慌，因为这是正常操作:)
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png?q-sign-algorithm=sha1&q-ak=AKIDdFh1DFpsRyLXYinXO6d0DGuNfnlYfwa4&q-sign-time=1543159886;1543160786&q-key-time=1543159886;1543160786&q-header-list=&q-url-param-list=&q-signature=50e602fedfd1f96f14a753cd09aad472ea5b915d" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

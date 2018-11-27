@@ -7,6 +7,7 @@ tags:
 -   Vue
 -   CSS
 -   微信相关
+date: 2018/1/24
 ---
 
 > 距离第一篇的发布过了好久，因为这次真的踩了不少坑..以后还是尽量不要新立项目好了，就跟立了个flag一样T T
@@ -137,9 +138,5 @@ watch: {
 ## 总结
 本系列文章主要还是记录实际开发过程中的一些解决方案，本篇主要是围绕在路由相关的问题以及微信在其中的兼容问题，希望能帮助大家和我规避日后的坑。
 
-## 往期文章
--   [移动端自制音乐播放器--React](https://juejin.im/post/5a4e3af86fb9a01cba425d7d)
--   [移动端中踩过的关于日历&时间的坑](https://juejin.im/post/5a3f729c6fb9a044fb07f935)
--   [谈谈React--componentWillReceiveProps的使用](https://juejin.im/post/5a39de3d6fb9a045154405ec)
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

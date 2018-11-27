@@ -5,6 +5,7 @@ categories:
 tags:
 -   Javascript
 -   React
+date: 2017/12/22
 ---
 
 ## 什么是componentWillReceiveProps？
