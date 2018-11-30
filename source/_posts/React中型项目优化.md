@@ -1,4 +1,13 @@
-#   记录一次React中型项目的优化实践
+---
+title: React中型项目的优化实践
+categories:
+-   博客正篇
+tags:
+-   Javascript
+-   React
+-   Webpack
+date: 2018/6/13
+---
 
 >   写在前头--在公司搬砖也差不多一年了，眼看着项目越来越大，优化问题亟待解决。优化是一件很矛盾的事情，但是为了诗和远方，我们还是得走一趟坑坑洼洼的优化之路。
 
@@ -101,13 +110,13 @@
 
 因为我们使用了react-router，所以我们可以使用react-router的getComponent轻松达到页面懒加载这一需求。如下图所示，将mainpage这样引入route的话，在打包的时候会将其分离成一个独立的js。
 
-<img width="50%" src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-04.png"/>
+<img width="50%" src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-05.png"/>
 
 -   组件懒加载 && 依赖懒加载
 
 组件和依赖的懒加载也是十分简单的，如下图这样写就能达到懒加载的效果，但如果我们使用了babel则需要修改一下babel的配置，让它能够顺利解析动态import()的语法。
 
-<img width="50%" src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-05.png"/>
+<img width="50%" src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-06.png"/>
 
 
 ### ③ 打包提速
@@ -136,7 +145,7 @@
 
 相信大家看完这些之后都会对wp的配置有基本的认知，紧接下来就是建目录、装依赖巴拉巴拉。最终我们会得到一个这样的目录结构--
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-06.png" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-07.png" width="50%" />
 
 -   写个Hello World!
 
@@ -146,7 +155,7 @@
 
 剥开非核心依赖，我们最核心的依赖其实就是react & react-router & sass，只要webpack能够正确的解析es6和sass我们就能很大程度的还原旧项目的环境。（babel中与jsx相关的配置在package里）
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-07.png" width="50%" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/react-rebuild-08.png" width="50%" />
 
 
 -   仔细研读package
@@ -251,5 +260,4 @@ const config = {
 
 其实，能够优化的还有很多很多，请求方面、业务方面甚至是代码写法...都是可以优化的，但是这些怎么能一蹴而就呢？还是得走一步，看一步，选择最适合自家项目的优化方案才是最佳方案~
 
-
-
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />
