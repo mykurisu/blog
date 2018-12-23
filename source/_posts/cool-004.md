@@ -49,8 +49,6 @@ date: 2018/12/23
 
 <img src='https://blog-1252307419.cos.ap-beijing.myqcloud.com/cool/cool--004-04.png' />
 
-上面只是其中的一种情景，实际上所有的可点击区域都可以用这种模式限制触发频率。点击阅读原文直达demo，源码以及实现效果都可以直观的看到~如果绕住了可以配合前面的解析看看。
+上面只是其中的一种情景，实际上所有的可点击区域都可以用这种模式限制触发频率。点击[这里](https://code.h5jun.com/rajek/edit?console,output)，源码以及实现效果都可以直观的看到~如果绕住了可以配合前面的解析看看。
 
-<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" />
-
-https://code.h5jun.com/rajek/edit?console,output
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width='50%'/>
