@@ -19,7 +19,7 @@ date: 2020/01/20
 
 如果大家没接触过nest，可以结合[nest官网](https://nestjs.com/)以及[fast-nest 一个基于nest的快速启动项目](https://github.com/mykurisu/fast-nest)来构建一个初印象。
 
-<img src="./module.png" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/nest/module.png" />
 
 如图，这是官网示例项目的目录结构，可以发现它和我们传统的node项目有些不同，在目录结构我们就能看到模块化影子。先是主入口main.ts，后是主模块app.module.ts，最后是挂载在app中的cat模块。
 
@@ -39,7 +39,7 @@ Nest自身就是通过typescript开发的，所以我们初始化完一个nest�
 
 这就要结合Nest自带的注解式开发说起：
 
-<img src="./decorate.png" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/nest/decorate.png" />
 
 如图，我们可以通过装饰器来完成对请求参数的获取，例如我们想获取请求头中的某一项，我们可以这么写
 
@@ -66,7 +66,7 @@ export class TestController {
 
 ##  开源表现及项目兼容程度
 
-<img src="./issue.png" />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/nest/issue.png" />
 
 进到Nest的github中不难发现，项目的commit提交数以及issue解决数都十分优秀。我们使用某个开源项目除了项目本身的稳定，一般也很注意这个项目的活跃程度，而活跃程度的评判标准我觉得commit以及issue都可以当做衡量的标准。
 
@@ -78,4 +78,4 @@ export class TestController {
 
 关于Nest的初探到此已经将近完结，对笔者而言这个框架给我带来的更多是一种规整感。它赋予项目极其解耦且灵活的模块化能力，并不需要我们额外去规划一套约定，只要使用了它，我们的项目自然而然会变成模块化的项目。相信随着后续的使用，我可以总结更多关于Nest的使用干货，感谢大家的阅读。
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />

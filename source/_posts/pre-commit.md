@@ -23,7 +23,7 @@ pre-commit大家可能不是熟悉，但是我们基本都享受过它带来的�
 
 > 提示：任何正确命名的可执行脚本都可以正常使用 —— 你可以用 Ruby 或 Python，或其它语言编写它们。  -- [自定义 Git - Git 钩子](https://www.git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)
 
-![](https://user-gold-cdn.xitu.io/2020/1/11/16f94ff2db3f5014?w=1316&h=796&f=png&s=98024)
+![](https://blog-1252307419.cos.ap-beijing.myqcloud.com/pre-commit-0.png)
 
 ##  怎么编写一个可用的hook脚本
 
@@ -159,4 +159,4 @@ done;
 exit 0
 ```
 
-<img src="https://user-gold-cdn.xitu.io/2017/12/24/16087d7ac487f37c?w=375&h=524&f=png&s=118753" width=50% />
+<img src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/end.png" width=50% />
