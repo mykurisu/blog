@@ -207,6 +207,17 @@ a:hover, a:active {
   font-size: 2rem;
   font-weight: bold;
 }
+.sidebar .logo-title .title .avatar:hover {
+  animation: avatar 2s linear infinite;
+}
+@keyframes avatar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .sidebar .social-links {
   list-style: none;
   padding: 0;
@@ -692,4 +703,25 @@ a.btn {
   .share {
     display: grid;
   }
+}
+
+.wx-img {
+  position: relative;
+}
+
+.wx-img img {
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  transition: all .5s;
+}
+
+.wx-img:hover img {
+  opacity: 1;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: -100px;
 }

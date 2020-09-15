@@ -1,13 +1,17 @@
 .sidebar.animated.fadeInDown
   .logo-title
     .title
-      img(src="https://mykurisu-1252307419.cos.ap-guangzhou.myqcloud.com/WechatIMG3.jpeg",style="width:127px;border-radius: 50%;overflow: hidden")
+      .avatar
+       img(src="https://mykurisu-1252307419.cos.ap-guangzhou.myqcloud.com/WechatIMG3.jpeg",style="width:127px;border-radius: 50%;overflow: hidden")
       h3(title="")
         a(href="/")= config.title
       if theme.description
         .description
           p= theme.description
           p= '个人邮箱: zengxp0526@163.com'
+          .wx-img
+            p= '微信: AKIKAN(请注明原因)'
+            img(src="https://blog-1252307419.cos.ap-beijing.myqcloud.com/WechatIMG42.jpeg")
 
   ul.social-links
     if theme.twitter
